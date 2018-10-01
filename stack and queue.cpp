@@ -66,6 +66,7 @@ void stck_del_arr()
     getch();
     stck();
 }
+
 void stck_print()
 {
     system("cls");
@@ -91,6 +92,7 @@ void stck_print()
     getch();
     stck();
 }
+
 void stck()
 {
     system("cls");
@@ -139,6 +141,7 @@ void que_ins_arr()
     getch();
     que();
 }
+
 void que_del_arr()
 {
     system("cls");
@@ -156,6 +159,7 @@ void que_del_arr()
     getch();
     que();
 }
+
 void que_print()
 {
     system("cls");
@@ -169,6 +173,7 @@ void que_print()
     getch();
     que();
 }
+
 void que()
 {
     system("cls");
@@ -193,6 +198,7 @@ void que()
         break;
     }
 }
+
 void stck_ins_list()
 {
     system("cls");
@@ -217,6 +223,7 @@ void stck_ins_list()
     getch();
     stck_list();
 }
+
 void stck_del_list()
 {
     system("cls");
@@ -235,6 +242,7 @@ void stck_del_list()
     getch();
     stck_list();
 }
+
 void stck_print_list()
 {
     system("cls");
@@ -286,6 +294,7 @@ void stck_list()
         break;
     }
 }
+
 void que_ins_list()
 {
     system("cls");
@@ -310,6 +319,7 @@ void que_ins_list()
     getch();
     que_list();
 }
+
 void que_del_list()
 {
     system("cls");
@@ -342,6 +352,7 @@ void que_del_list()
     getch();
     que_list();
 }
+
 void que_print_list()
 {
     system("cls");
@@ -390,6 +401,7 @@ void que_list()
         break;
     }
 }
+
 int main()
 {
 

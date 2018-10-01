@@ -1,3 +1,22 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @dewanshrawat15 Sign out
+1
+0 3 dewanshrawat15/Linked-lists-and-stack-queue
+forked from antew7/Linked-lists-and-stack-queue
+ Code  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Linked-lists-and-stack-queue/linked list all.cpp
+f576bc7  8 minutes ago
+@ravivarshney01 ravivarshney01 fixed indentation
+@ravivarshney01 @antew7
+     
+587 lines (559 sloc)  11.4 KB
 #include <iostream>
 #include <conio.h>
 #include <stdlib.h>
@@ -54,6 +73,7 @@ void insert_beg_d()
     getch();
     doubly();
 }
+
 void insert_end_d()
 {
     int data;
@@ -86,6 +106,7 @@ void insert_end_d()
     getch();
     doubly();
 }
+
 void insert_ind_d()
 {
     int data;
@@ -130,6 +151,7 @@ void insert_ind_d()
     getch();
     singly();
 }
+
 void del_beg_d()
 {
     node *temp;
@@ -148,6 +170,7 @@ void del_beg_d()
     getch();
     doubly();
 }
+
 void del_end_d()
 {
     node *temp;
@@ -175,6 +198,7 @@ void del_end_d()
     getch();
     doubly();
 }
+
 void del_ind_d()
 {
     int ind;
@@ -234,6 +258,7 @@ void rev_d()
     getch();
     doubly();
 }
+
 void printi_d()
 {
     node *temp;
@@ -277,6 +302,7 @@ void insert_beg()
     getch();
     singly();
 }
+
 void insert_end()
 {
     int data;
@@ -307,6 +333,7 @@ void insert_end()
     getch();
     singly();
 }
+
 void insert_ind()
 {
     int data;
@@ -367,6 +394,7 @@ void del_beg()
     getch();
     singly();
 }
+
 void del_end()
 {
     node *temp;
@@ -398,6 +426,7 @@ void del_end()
     getch();
     singly();
 }
+
 void del_ind()
 {
     int ind;
@@ -433,6 +462,7 @@ void del_ind()
     getch();
     singly();
 }
+
 void rev()
 {
     node *temp = NULL;
@@ -460,6 +490,7 @@ void rev()
     getch();
     singly();
 }
+
 void printi()
 {
     node *temp;
@@ -480,6 +511,7 @@ void printi()
     getch();
     singly();
 }
+
 void singly()
 {
     system("cls");
@@ -520,6 +552,7 @@ void singly()
         break;
     }
 }
+
 void doubly()
 {
     system("cls");
@@ -560,6 +593,7 @@ void doubly()
         break;
     }
 }
+
 int main()
 {
 

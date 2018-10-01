@@ -24,33 +24,36 @@ int st[100];
 int fron = -1;
 int endi = -1;
 int q[100];
-struct node{
+struct node
+{
   int data;
   node* next;
 };
 node* head = NULL;
 void stck_ins_arr()
-{ system("cls");
-    int data;
+{ 
+  system("cls");
+  int data;
   cout<<"Enter the data: ";
   cin>>data;
-    if(top == -1)
-    {
-       top++;
-       st[top]=data;
-    }
-    else
-    {
+  if(top == -1)
+  {
+    top++;
+    st[top]=data;
+  }
+  else
+  {
         top++;
         st[top] = data;
-    }
-cout<<"\nElement inserted succesfully\n";
-getch();
-stck();
+  }
+  cout<<"\nElement inserted succesfully\n";
+  getch();
+  stck();
 }
 
 void stck_del_arr()
-{   system("cls");
+{   
+  system("cls");
   if(top == -1)
   {
       cout<<"No elemnts found to delete\n";
@@ -61,29 +64,30 @@ void stck_del_arr()
       cout<<"\nElement deleted succesfully\n";
   }
   getch();
-stck();
+  stck();
 }
 void stck_print()
-{ system("cls");
+{ 
+   system("cls");
    cout<<"\n\n\n\t\tThe Representation of stack is as follows\n\n";
 
-    for(int i=top;i>=0;i--)
-    {   if(i == top)
-        {
+   for(int i=top;i>=0;i--)
+   { 
+      if(i == top)
+      {
            cout<<"\t\t\t"<<st[i]<<"<-"<<"\n"<<"\t\t\t-"<<"\n";
-        }
-        else
-        {
-
-
-        cout<<"\t\t\t"<<st[i]<<"\n"<<"\t\t\t-"<<"\n";
-        }
-    }
-    getch();
-stck();
+      }
+      else
+      {
+          cout<<"\t\t\t"<<st[i]<<"\n"<<"\t\t\t-"<<"\n";
+      }
+   }
+   getch();
+   stck();
 }
 void stck()
-{  system("cls");
+{  
+    system("cls");
     cout<<"\n\t\t STACK AS ARRAY\n";
     cout<<"Choose any option\n";
     cout<<"\n1. Insert\n2. Delete\n3. Print\n";
@@ -103,34 +107,28 @@ void stck()
 }
 
 void que_ins_arr()
-{  system("cls");
+{  
+    system("cls");
     int data;
-  cout<<"\nEnter data to be inserted: ";
-  cin>>data;
-   if(fron == -1)
-   {   endi = fron =0;
-
-       q[fron] = data;
-
-   }
-   else
-   {
-       endi++;
-       q[endi] = data;
-   }
-
-cout<<"\nElement inserted succesfully\n";
-
-
-
-getch();
-que();
+    cout<<"\nEnter data to be inserted: ";
+    cin>>data;
+    if(fron == -1)
+    {
+        endi = fron =0;
+        q[fron] = data;
+    }
+    else
+    {
+        endi++;
+        q[endi] = data;
+    }
+    cout<<"\nElement inserted succesfully\n";
+    getch();
+    que();
 }
 void que_del_arr()
 {
-   system("cls");
-
-
+    system("cls");
     if(fron == -1)
     {
         cout<<"\nNot enough elements to delete\n";
@@ -140,31 +138,24 @@ void que_del_arr()
         fron++;
         cout<<"\nElement deleted succesfully\n";
     }
-
-
-
-
-getch();
-que();
-}
-void que_print()
-{  system("cls");
-   cout<<"\n\n\n\t\tThe Representation of queue is as follows\n\n";
-   cout<<"\t\t\t\t";
+    getch();
+    que();
+ }
+ void que_print()
+ { 
+    system("cls");
+    cout<<"\n\n\n\t\tThe Representation of queue is as follows\n\n";
+    cout<<"\t\t\t\t";
     for(int i= endi;i>=fron;i--)
     {
         cout<<q[i]<<" | ";
     }
-
-
-
-
-
-getch();
-que();}
-void que()
-{
-   system("cls");
+    getch();
+    que();
+ }
+ void que()
+ {
+    system("cls");
     cout<<"\n\t\t QUEUE AS ARRAY\n";
     cout<<"Choose any option\n";
     cout<<"\n1. Insert\n2. Delete\n3. Print\n";
@@ -183,7 +174,8 @@ void que()
     }
 }
 void stck_ins_list()
-{ system("cls");
+{ 
+   system("cls");
    int data;
    cout<<"\nEnter data: ";
    cin>>data;
@@ -205,8 +197,10 @@ void stck_ins_list()
    getch();
    stck_list();
 }
+
 void stck_del_list()
-{  system("cls");
+{
+   system("cls");
    node* temp;
    if(head == NULL)
    {
@@ -223,8 +217,9 @@ void stck_del_list()
    stck_list();
 }
 void stck_print_list()
-{ system("cls");
-node* temp;
+{ 
+  system("cls");
+  node* temp;
   temp = head;
   if(head == NULL)
   {
@@ -232,25 +227,21 @@ node* temp;
   }
   else
   {
-
-   cout<<"\n\n\n\t\tThe Representation of stack(linked list) is as follows\n\n";
-   int i=0;
-  while(temp!=NULL)
-  {
-
-
-      cout<<"\t\t\t"<<temp->data<<"\n"<<"\t\t\t-"<<"\n";
-      temp = temp->next;
-  }
+    cout<<"\n\n\n\t\tThe Representation of stack(linked list) is as follows\n\n";
+    int i=0;
+    while(temp!=NULL)
+    {
+        cout<<"\t\t\t"<<temp->data<<"\n"<<"\t\t\t-"<<"\n";
+        temp = temp->next;
+    }
   }
   getch();
   stck_list();
 }
 
-
 void stck_list()
 {
-   system("cls");
+    system("cls");
     cout<<"\n\t\t STACK AS LINKED LIST\n";
     cout<<"Choose any option\n";
     cout<<"\n1. Insert\n2. Delete\n3. Print\n";
@@ -269,42 +260,45 @@ void stck_list()
     }
 }
 void que_ins_list()
-{   system("cls");
+{
+    system("cls");
     int data;
-   cout<<"\nEnter data: ";
-   cin>>data;
-   if(head == NULL)
-   {
+    cout<<"\nEnter data: ";
+    cin>>data;
+    if(head == NULL)
+    {
        node* temp = new node;
        temp->data = data;
        temp->next = NULL;
        head = temp;
-   }
-   else
-   {
+    }
+    else
+    {
        node* temp = new node;
        temp->data = data;
        temp->next = head;
        head = temp;
-   }
-   cout<<"\nElement inserted succesfully\n";
-   getch();
-   que_list();
+    }
+    cout<<"\nElement inserted succesfully\n";
+    getch();
+    que_list();
 }
-void que_del_list()
-{    system("cls");
-    node* temp;
-node* temp1;
-int l=0;
-  temp = head;
-  temp1  = head;
-  if(head == NULL)
-   {
-       cout<<"\nNot enough nodes!!\n";
-   }
-   else
-   {  node* temp2;
 
+void que_del_list()
+{
+    system("cls");
+    node* temp;
+    node* temp1;
+    int l=0;
+    temp = head;
+    temp1  = head;
+    if(head == NULL)
+    {
+       cout<<"\nNot enough nodes!!\n";
+    }
+    else
+    {
+       node* temp2;
        while(temp->next!=NULL)
        {
            temp= temp->next;
@@ -317,42 +311,38 @@ int l=0;
            l--;
        }
        temp1->next = NULL;
-
-
-
-   }
+    }
     cout<<"\nElement deleted succesfully!!\n";
-getch();
-que_list();
+    getch();
+    que_list();
 }
-void que_print_list()
-{  system("cls");
-    node* temp;
-   temp = head;
-  if(head == NULL)
-  {
-      cout<<"\n\t\tLIST EMPTY!!\n";
-  }
-  else
-  {
 
-  cout<<"\n\n\n\t\tThe Representation of queue is as follows\n\n";
-   cout<<"\t\t\t\t";
-    while(temp!=NULL)
-     {
+void que_print_list()
+{
+    system("cls");
+    node* temp;
+    temp = head;
+    if(head == NULL)
+    {
+        cout<<"\n\t\tLIST EMPTY!!\n";
+    }
+    else
+    {
+       cout<<"\n\n\n\t\tThe Representation of queue is as follows\n\n";
+       cout<<"\t\t\t\t";
+       while(temp!=NULL)
+       {
          cout<<temp->data<<" | ";
          temp = temp->next;
-     }
-  }
-  getch();
-  que_list();
-
+       }
+    }
+    getch();
+    que_list();
 }
-
 
 void que_list()
 {
-     system("cls");
+    system("cls");
     cout<<"\n\t\t QUEUE AS LINKED LIST\n";
     cout<<"Choose any option\n";
     cout<<"\n1. Insert\n2. Delete\n3. Print\n";
@@ -390,6 +380,6 @@ int main()
                 break;
         default: cout<<"Invalid Choice";
                 break;
-
      }
-return 0;}
+    return 0;
+}

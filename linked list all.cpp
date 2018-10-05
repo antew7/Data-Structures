@@ -54,6 +54,7 @@ void insert_beg_d()
     getchar();
     doubly();
 }
+
 void insert_end_d()
 {
     int data;
@@ -86,6 +87,7 @@ void insert_end_d()
     getchar();
     doubly();
 }
+
 void insert_ind_d()
 {
     int data;
@@ -130,6 +132,7 @@ void insert_ind_d()
     getchar();
     singly();
 }
+
 void del_beg_d()
 {
     node *temp;
@@ -148,6 +151,7 @@ void del_beg_d()
     getch();
     doubly();
 }
+
 void del_end_d()
 {
     node *temp;
@@ -175,6 +179,7 @@ void del_end_d()
     getchar();
     doubly();
 }
+
 void del_ind_d()
 {
     int ind;
@@ -234,6 +239,7 @@ void rev_d()
     getchar();
     doubly();
 }
+
 void printi_d()
 {
     node *temp;
@@ -277,6 +283,7 @@ void insert_beg()
     getchar();
     singly();
 }
+
 void insert_end()
 {
     int data;
@@ -307,6 +314,7 @@ void insert_end()
     getchar();
     singly();
 }
+
 void insert_ind()
 {
     int data;
@@ -367,6 +375,7 @@ void del_beg()
     getchar();
     singly();
 }
+
 void del_end()
 {
     node *temp;
@@ -398,6 +407,7 @@ void del_end()
     getchar();
     singly();
 }
+
 void del_ind()
 {
     int ind;
@@ -433,6 +443,7 @@ void del_ind()
     getchar();
     singly();
 }
+
 void rev()
 {
     node *temp = NULL;
@@ -460,6 +471,7 @@ void rev()
     getchar();
     singly();
 }
+
 void printi()
 {
     node *temp;
@@ -480,6 +492,7 @@ void printi()
     getchar();
     singly();
 }
+
 void singly()
 {
     system("cls");
@@ -520,6 +533,7 @@ void singly()
         break;
     }
 }
+
 void doubly()
 {
     system("cls");
@@ -560,6 +574,7 @@ void doubly()
         break;
     }
 }
+
 int main()
 {
 
